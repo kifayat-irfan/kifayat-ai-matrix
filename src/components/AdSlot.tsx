@@ -1,8 +1,8 @@
 import { siteConfig } from "@/lib/site";
 
 /**
- * AdSense slot placeholder. Renders a labelled dev box when no AdSense ID is
- * configured, and a real <ins> ad container once NEXT_PUBLIC_ADSENSE_ID is set.
+ * AdSense slot. Renders a real <ins> ad container once NEXT_PUBLIC_ADSENSE_ID is
+ * set, and is hidden entirely otherwise (no dev-note text leaking to production).
  * All slots are non-intrusive per AdSense Publisher Policies.
  */
 export function AdSlot({
@@ -14,28 +14,12 @@ export function AdSlot({
   format?: "auto" | "horizontal" | "vertical" | "banner";
   className?: string;
 }) {
-  const label: Record<string, string> = {
-    header: "Header Banner (728x90)",
-    "in-article-2": "In-Article Interstitial",
-    "in-article-6": "In-Article Interstitial",
-    sidebar: "Sidebar (300x600)",
-    "mobile-bottom": "Sticky Mobile Bottom Anchor",
-  };
-
-  if (!siteConfig.adsenseClientId) {
-    return (
-      <aside
-        className={`mx-auto mb-6 rounded-lg border border-dashed border-matrix-cyan/25 bg-matrix-panel/50 px-4 py-6 text-center text-xs text-slate-600 ${className}`}
-        aria-hidden="true"
-      >
-        Ad placeholder — {label[slot]} ({format})
-      </aside>
-    );
-  }
+  // Nothing to show until an AdSense client ID is configured. Keep it clean.
+  if (!siteConfig.adsenseClientId) return null;
 
   return (
     <ins
-      className={`adsbygoogle ${className}`}
+      className={`adsbygoogle mx-auto mb-6 block ${className}`}
       style={{ display: "block" }}
       data-ad-client={siteConfig.adsenseClientId}
       data-ad-format={format}

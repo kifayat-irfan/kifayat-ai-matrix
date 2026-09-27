@@ -4,14 +4,51 @@ html { scroll-behavior: smooth; }
 body {
   background: #0A0D14;
   color: #E7ECF3;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-family: var(--font-inter), 'Inter', system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
 }
 a { color: inherit; }
 ::selection { background: rgba(0,240,255,0.3); }
+
+/* Editorial display type for headlines. */
+.font-display {
+  font-family: var(--font-grotesk), 'Space Grotesk', 'Inter', sans-serif;
+  letter-spacing: -0.02em;
+}
+.font-mono {
+  font-family: var(--font-mono), 'JetBrains Mono', ui-monospace, monospace;
+}
+
+/* Subtle grid backdrop. */
 .matrix-grid-bg {
   background-image:
     linear-gradient(rgba(0,240,255,0.06) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0,240,255,0.06) 1px, transparent 1px);
   background-size: 40px 40px;
+}
+
+/* Refined scrollbar. */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #0A0D14; }
+::-webkit-scrollbar-thumb {
+  background: #1F2533;
+  border-radius: 9999px;
+  border: 2px solid #0A0D14;
+}
+::-webkit-scrollbar-thumb:hover { background: #2a3346; }
+
+/* Smooth focus ring for keyboard users. */
+:focus-visible {
+  outline: 2px solid #00F0FF;
+  outline-offset: 2px;
+}
+
+/* Reduced motion: disable 3D drift / animations. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
