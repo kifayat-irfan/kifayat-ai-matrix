@@ -12,7 +12,7 @@ export default function Privacy() {
       <h1>Privacy Policy</h1>
       <p>Last updated: {new Date().toLocaleDateString("en-US")}</p>
       <p>
-        This Privacy Policy describes how Kifayat AI Matrix ("we") collects, uses,
+        This Privacy Policy describes how Kifayat AI Matrix (“we”) collects, uses,
         and shares information when you visit our site.
       </p>
       <h2>Information We Collect</h2>

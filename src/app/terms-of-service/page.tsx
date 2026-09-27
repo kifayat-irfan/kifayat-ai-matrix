@@ -22,7 +22,7 @@ export default function Terms() {
       </p>
       <h2>No Warranty</h2>
       <p>
-        Content is provided "as is" without warranty of any kind. AI-assisted
+        Content is provided “as is” without warranty of any kind. AI-assisted
         reporting may contain inaccuracies; verify important information from
         primary sources.
       </p>
