@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0D14"/>
+      <stop offset="1" stop-color="#1a0a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <circle cx="1540" cy="378" r="1.4" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1362" cy="22" r="1.7" fill="#7000FF" opacity="0.5"/>
+  <circle cx="948" cy="172" r="3.3" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1234" cy="583" r="1.9" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1303" cy="616" r="4.5" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1003" cy="193" r="1.9" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="369" cy="139" r="1.1" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="119" cy="567" r="2.9" fill="#7000FF" opacity="0.5"/>
+  <circle cx="3" cy="875" r="1.5" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="353" cy="610" r="2.9" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1058" cy="889" r="4.4" fill="#7000FF" opacity="0.5"/>
+  <circle cx="826" cy="469" r="3.3" fill="#7000FF" opacity="0.5"/>
+  <circle cx="509" cy="547" r="5.0" fill="#7000FF" opacity="0.5"/>
+  <circle cx="738" cy="197" r="3.1" fill="#7000FF" opacity="0.5"/>
+  <circle cx="511" cy="765" r="4.6" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1523" cy="805" r="2.0" fill="#7000FF" opacity="0.5"/>
+  <circle cx="961" cy="109" r="4.7" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="570" cy="814" r="1.1" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1457" cy="707" r="3.4" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="611" cy="606" r="4.5" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="288" cy="797" r="3.4" fill="#7000FF" opacity="0.5"/>
+  <circle cx="158" cy="19" r="3.4" fill="#7000FF" opacity="0.5"/>
+  <circle cx="835" cy="803" r="3.0" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1583" cy="138" r="2.6" fill="#7000FF" opacity="0.5"/>
+  <circle cx="75" cy="415" r="1.3" fill="#7000FF" opacity="0.5"/>
+  <circle cx="104" cy="666" r="3.1" fill="#7000FF" opacity="0.5"/>
+  <circle cx="95" cy="598" r="1.2" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="430" cy="294" r="3.3" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1529" cy="877" r="3.7" fill="#7000FF" opacity="0.5"/>
+  <circle cx="36" cy="250" r="5.0" fill="#7000FF" opacity="0.5"/>
+  <circle cx="325" cy="489" r="2.0" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1553" cy="499" r="3.3" fill="#7000FF" opacity="0.5"/>
+  <circle cx="973" cy="899" r="3.4" fill="#7000FF" opacity="0.5"/>
+  <circle cx="207" cy="299" r="1.8" fill="#7000FF" opacity="0.5"/>
+  <circle cx="728" cy="742" r="2.0" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1227" cy="501" r="2.3" fill="#7000FF" opacity="0.5"/>
+  <circle cx="82" cy="319" r="4.1" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1316" cy="565" r="1.8" fill="#7000FF" opacity="0.5"/>
+  <circle cx="238" cy="447" r="4.7" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="589" cy="622" r="4.5" fill="#00F0FF" opacity="0.5"/>
+  <text x="80" y="430" font-family="sans-serif" font-size="64" font-weight="700" fill="#00F0FF">TechCrunch AI</text>
+  <text x="80" y="500" font-family="monospace" font-size="24" fill="#8B93A7">TechCrunch AI: AI Funding Landscape And Emerging Unicorns —…</text>
+  <text x="80" y="840" font-family="monospace" font-size="18" fill="#8B93A7">Kifayat AI Matrix · #6602e800</text>
+</svg>

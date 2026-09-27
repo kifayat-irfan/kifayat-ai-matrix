@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0D14"/>
+      <stop offset="1" stop-color="#1a0a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <circle cx="948" cy="199" r="3.5" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="31" cy="877" r="3.2" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="194" cy="550" r="2.2" fill="#7000FF" opacity="0.5"/>
+  <circle cx="134" cy="334" r="3.8" fill="#7000FF" opacity="0.5"/>
+  <circle cx="481" cy="279" r="2.1" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1050" cy="577" r="1.7" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1469" cy="633" r="1.5" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="627" cy="51" r="3.8" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="688" cy="336" r="2.3" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="0" cy="808" r="2.5" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="653" cy="125" r="3.0" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1094" cy="221" r="4.9" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="953" cy="647" r="4.5" fill="#7000FF" opacity="0.5"/>
+  <circle cx="350" cy="132" r="3.9" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="850" cy="714" r="4.1" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1528" cy="773" r="1.8" fill="#7000FF" opacity="0.5"/>
+  <circle cx="274" cy="259" r="4.6" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="816" cy="762" r="3.2" fill="#7000FF" opacity="0.5"/>
+  <circle cx="22" cy="515" r="2.1" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1567" cy="94" r="4.4" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="763" cy="720" r="2.5" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="620" cy="669" r="4.7" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1066" cy="828" r="2.8" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1457" cy="145" r="3.8" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1234" cy="870" r="1.7" fill="#7000FF" opacity="0.5"/>
+  <circle cx="125" cy="295" r="4.6" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1018" cy="694" r="3.0" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1110" cy="391" r="3.4" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="75" cy="808" r="3.5" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1015" cy="150" r="4.1" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1166" cy="690" r="4.4" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="851" cy="698" r="1.7" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="595" cy="491" r="2.9" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1339" cy="197" r="3.8" fill="#7000FF" opacity="0.5"/>
+  <circle cx="390" cy="291" r="1.8" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1580" cy="131" r="1.1" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="874" cy="619" r="4.7" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="646" cy="627" r="1.2" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1242" cy="890" r="2.1" fill="#7000FF" opacity="0.5"/>
+  <circle cx="253" cy="741" r="4.2" fill="#7000FF" opacity="0.5"/>
+  <text x="80" y="430" font-family="sans-serif" font-size="64" font-weight="700" fill="#00F0FF">Anthropic</text>
+  <text x="80" y="500" font-family="monospace" font-size="24" fill="#8B93A7">Anthropic: Constitutional AI And Scalable Oversight — What…</text>
+  <text x="80" y="840" font-family="monospace" font-size="18" fill="#8B93A7">Kifayat AI Matrix · #2e2a0866</text>
+</svg>

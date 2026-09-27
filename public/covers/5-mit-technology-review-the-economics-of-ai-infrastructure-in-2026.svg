@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0D14"/>
+      <stop offset="1" stop-color="#1a0a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <circle cx="38" cy="849" r="1.6" fill="#7000FF" opacity="0.5"/>
+  <circle cx="529" cy="701" r="2.3" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="75" cy="208" r="1.9" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="871" cy="378" r="3.4" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="807" cy="224" r="3.1" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="528" cy="222" r="1.3" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="668" cy="681" r="4.2" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1116" cy="186" r="1.6" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1280" cy="885" r="1.1" fill="#7000FF" opacity="0.5"/>
+  <circle cx="676" cy="580" r="4.0" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1590" cy="118" r="1.7" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1364" cy="145" r="1.6" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1533" cy="507" r="4.6" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="702" cy="582" r="1.2" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="740" cy="775" r="4.0" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="271" cy="198" r="3.0" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1343" cy="601" r="4.8" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="242" cy="699" r="4.6" fill="#7000FF" opacity="0.5"/>
+  <circle cx="761" cy="726" r="1.4" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1297" cy="137" r="3.1" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1186" cy="41" r="3.3" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="139" cy="53" r="4.4" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1333" cy="838" r="4.1" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1037" cy="22" r="2.9" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1308" cy="825" r="3.1" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1425" cy="572" r="3.6" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1234" cy="233" r="2.6" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="179" cy="703" r="2.3" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1329" cy="552" r="1.7" fill="#7000FF" opacity="0.5"/>
+  <circle cx="153" cy="104" r="2.8" fill="#7000FF" opacity="0.5"/>
+  <circle cx="494" cy="752" r="4.9" fill="#7000FF" opacity="0.5"/>
+  <circle cx="132" cy="552" r="1.5" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="375" cy="166" r="4.6" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="694" cy="302" r="4.6" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1023" cy="358" r="1.8" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="701" cy="685" r="5.0" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="409" cy="697" r="1.5" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="938" cy="488" r="4.3" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1312" cy="182" r="4.3" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="336" cy="517" r="1.7" fill="#00F0FF" opacity="0.5"/>
+  <text x="80" y="430" font-family="sans-serif" font-size="64" font-weight="700" fill="#00F0FF">MIT Technology Review</text>
+  <text x="80" y="500" font-family="monospace" font-size="24" fill="#8B93A7">MIT Technology Review: The Economics Of AI Infrastructure I…</text>
+  <text x="80" y="840" font-family="monospace" font-size="18" fill="#8B93A7">Kifayat AI Matrix · #af786ec4</text>
+</svg>

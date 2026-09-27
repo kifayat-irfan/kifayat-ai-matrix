@@ -1,0 +1,59 @@
+name: Daily AI Posts
+
+on:
+  schedule:
+    # 6:00 UTC daily — publish the day's 20 posts
+    - cron: "0 6 * * *"
+  workflow_dispatch: # manual trigger
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - run: npm ci
+      - run: npm run gen:posts
+
+      - name: Commit generated posts
+        run: |
+          git config user.name "kifayat-ai-matrix-bot"
+          git config user.email "bot@kifayat-ai-matrix.app"
+          git add src/app/posts public/covers
+          if git diff --staged --quiet; then
+            echo "No new posts to commit."
+          else
+            git commit -m "chore(posts): generate daily AI posts $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - run: npm ci
+      - name: Deploy to Vercel
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          vercel-args: "--prod --skip-build"
+          build-command: "npm run build"

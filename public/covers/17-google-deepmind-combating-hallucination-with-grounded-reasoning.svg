@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0D14"/>
+      <stop offset="1" stop-color="#1a0a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <circle cx="1140" cy="698" r="3.0" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1130" cy="47" r="3.1" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1354" cy="608" r="2.2" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="506" cy="107" r="1.9" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="175" cy="187" r="4.5" fill="#7000FF" opacity="0.5"/>
+  <circle cx="754" cy="305" r="4.3" fill="#7000FF" opacity="0.5"/>
+  <circle cx="177" cy="761" r="4.2" fill="#7000FF" opacity="0.5"/>
+  <circle cx="72" cy="338" r="4.2" fill="#7000FF" opacity="0.5"/>
+  <circle cx="933" cy="164" r="2.0" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1109" cy="599" r="4.0" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="108" cy="120" r="1.8" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="912" cy="731" r="1.8" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="70" cy="3" r="3.3" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="241" cy="693" r="3.4" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="591" cy="261" r="2.0" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1027" cy="328" r="2.7" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="391" cy="681" r="4.1" fill="#7000FF" opacity="0.5"/>
+  <circle cx="906" cy="453" r="4.0" fill="#7000FF" opacity="0.5"/>
+  <circle cx="66" cy="672" r="4.2" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="658" cy="418" r="1.8" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1206" cy="283" r="4.1" fill="#7000FF" opacity="0.5"/>
+  <circle cx="526" cy="595" r="1.8" fill="#7000FF" opacity="0.5"/>
+  <circle cx="578" cy="840" r="3.0" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1237" cy="327" r="4.7" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="116" cy="600" r="5.0" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1029" cy="730" r="3.3" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1201" cy="740" r="4.6" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="609" cy="222" r="2.2" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="985" cy="217" r="2.3" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1176" cy="514" r="3.7" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1046" cy="758" r="3.3" fill="#7000FF" opacity="0.5"/>
+  <circle cx="475" cy="76" r="1.9" fill="#7000FF" opacity="0.5"/>
+  <circle cx="450" cy="629" r="4.8" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1527" cy="239" r="5.0" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="817" cy="216" r="4.3" fill="#7000FF" opacity="0.5"/>
+  <circle cx="572" cy="525" r="1.5" fill="#7000FF" opacity="0.5"/>
+  <circle cx="944" cy="75" r="3.2" fill="#7000FF" opacity="0.5"/>
+  <circle cx="7" cy="101" r="2.1" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1187" cy="890" r="3.0" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1369" cy="358" r="2.2" fill="#00F0FF" opacity="0.5"/>
+  <text x="80" y="430" font-family="sans-serif" font-size="64" font-weight="700" fill="#00F0FF">Google DeepMind</text>
+  <text x="80" y="500" font-family="monospace" font-size="24" fill="#8B93A7">Google DeepMind: Combating Hallucination With Grounded Reas…</text>
+  <text x="80" y="840" font-family="monospace" font-size="18" fill="#8B93A7">Kifayat AI Matrix · #ebd8dc5b</text>
+</svg>

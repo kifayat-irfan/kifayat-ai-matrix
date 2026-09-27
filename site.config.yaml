@@ -1,0 +1,17 @@
+# Site configuration for kifayat-ai-matrix
+
+siteName: "Kifayat AI Matrix"
+description: "Autonomous 3D interactive AI news magazine and automated blogging engine by Kifayat Irfan. Daily deep-dive coverage of OpenAI, Anthropic, Google DeepMind, Hugging Face, and frontier AI research."
+author: "Kifayat Irfan"
+authorRole: "Editor-in-Chief & Principal SEO Content Manager"
+owner: "Kifayat Irfan"
+url: "https://kifayat-ai-matrix.vercel.app"
+locale: "en_US"
+timezone: "UTC"
+
+# AdSense (set NEXT_PUBLIC_ADSENSE_ID; leave blank to render dev placeholder slots)
+adsenseClientId: ""
+
+social:
+  twitter: "@kifayatifran"
+  github: "https://github.com/kifayatifran"

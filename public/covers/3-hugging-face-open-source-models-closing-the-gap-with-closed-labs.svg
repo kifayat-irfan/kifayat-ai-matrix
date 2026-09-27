@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0D14"/>
+      <stop offset="1" stop-color="#1a0a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <circle cx="768" cy="187" r="4.7" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1330" cy="870" r="2.7" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="211" cy="255" r="1.6" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="467" cy="371" r="3.1" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1413" cy="744" r="2.1" fill="#7000FF" opacity="0.5"/>
+  <circle cx="586" cy="775" r="4.2" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1243" cy="52" r="3.5" fill="#7000FF" opacity="0.5"/>
+  <circle cx="125" cy="166" r="4.0" fill="#7000FF" opacity="0.5"/>
+  <circle cx="503" cy="246" r="3.6" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="170" cy="523" r="2.6" fill="#7000FF" opacity="0.5"/>
+  <circle cx="832" cy="551" r="4.3" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="825" cy="146" r="1.1" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="396" cy="672" r="4.2" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="143" cy="277" r="4.2" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1244" cy="62" r="1.2" fill="#7000FF" opacity="0.5"/>
+  <circle cx="392" cy="145" r="4.4" fill="#7000FF" opacity="0.5"/>
+  <circle cx="890" cy="494" r="2.8" fill="#7000FF" opacity="0.5"/>
+  <circle cx="458" cy="464" r="2.2" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1351" cy="383" r="1.9" fill="#7000FF" opacity="0.5"/>
+  <circle cx="910" cy="497" r="4.3" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1318" cy="437" r="3.1" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1478" cy="353" r="4.6" fill="#7000FF" opacity="0.5"/>
+  <circle cx="181" cy="79" r="1.3" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1512" cy="590" r="1.6" fill="#7000FF" opacity="0.5"/>
+  <circle cx="27" cy="416" r="1.7" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="528" cy="594" r="2.3" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="300" cy="519" r="1.3" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1316" cy="703" r="3.0" fill="#7000FF" opacity="0.5"/>
+  <circle cx="757" cy="324" r="4.1" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="1440" cy="31" r="3.2" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="742" cy="504" r="3.3" fill="#7000FF" opacity="0.5"/>
+  <circle cx="468" cy="534" r="4.5" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1173" cy="247" r="2.8" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="788" cy="86" r="3.8" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="969" cy="556" r="2.0" fill="#7000FF" opacity="0.5"/>
+  <circle cx="510" cy="677" r="3.0" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="542" cy="775" r="4.3" fill="#7000FF" opacity="0.5"/>
+  <circle cx="470" cy="80" r="1.2" fill="#00F0FF" opacity="0.5"/>
+  <circle cx="390" cy="294" r="2.6" fill="#7000FF" opacity="0.5"/>
+  <circle cx="1557" cy="226" r="4.2" fill="#00F0FF" opacity="0.5"/>
+  <text x="80" y="430" font-family="sans-serif" font-size="64" font-weight="700" fill="#00F0FF">Hugging Face</text>
+  <text x="80" y="500" font-family="monospace" font-size="24" fill="#8B93A7">Hugging Face: Open-source Models Closing The Gap With Close…</text>
+  <text x="80" y="840" font-family="monospace" font-size="18" fill="#8B93A7">Kifayat AI Matrix · #1614d54e</text>
+</svg>

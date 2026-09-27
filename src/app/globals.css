@@ -1,0 +1,17 @@
+/* Base */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: #0A0D14;
+  color: #E7ECF3;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+a { color: inherit; }
+::selection { background: rgba(0,240,255,0.3); }
+.matrix-grid-bg {
+  background-image:
+    linear-gradient(rgba(0,240,255,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,240,255,0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
