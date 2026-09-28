@@ -24,6 +24,7 @@ import crypto from "crypto";
 
 const POSTS_DIR = path.join(process.cwd(), "src", "app", "posts");
 const PUBLIC_COVERS = path.join(process.cwd(), "public", "covers");
+const PUBLIC_CAROUSELS = path.join(process.cwd(), "public", "carousels");
 fs.mkdirSync(POSTS_DIR, { recursive: true });
 fs.mkdirSync(PUBLIC_COVERS, { recursive: true });
 
@@ -181,6 +182,104 @@ function escapeXml(s) {
   return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 }
 
+/**
+ * Deterministic 9:16 vertical social carousel (Instagram Reels / TikTok friendly).
+ * One hook slide + one slide per TL;DR bullet + one CTA slide.
+ * Uses only native SVG <text> (no foreignObject) so the files export cleanly to PNG.
+ */
+function wrapText(text, maxChars) {
+  const words = String(text).split(/\s+/).filter(Boolean);
+  const lines = [];
+  let line = "";
+  for (const w of words) {
+    if ((line + " " + w).trim().length > maxChars) {
+      if (line) lines.push(line);
+      line = w;
+    } else {
+      line = (line + " " + w).trim();
+    }
+  }
+  if (line) lines.push(line);
+  return lines;
+}
+
+function textLines(x, y, lines, fontSize, color, weight = 700) {
+  return lines
+    .map(
+      (l, i) =>
+        `<tspan x="${x}" ${i === 0 ? `y="${y}"` : `dy="${Math.round(fontSize * 1.22)}"`}>${escapeXml(l)}</tspan>`
+    )
+    .join("");
+}
+
+function renderCarousel(dir, slug, title, org, tldr) {
+  fs.mkdirSync(dir, { recursive: true });
+  const W = 1080, H = 1920;
+  const base = `${dir}/${slug}`;
+  const slides = [];
+
+  // --- Slide 1: hook / cover ---
+  slides.push(`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0A0D14"/>
+      <stop offset="1" stop-color="#1a0a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="${W}" height="${H}" fill="url(#bg1)"/>
+  <g opacity="0.14">
+    ${Array.from({ length: 26 }, (_, i) => `<line x1="${(i * 42) % W}" y1="0" x2="${(i * 42) % W}" y2="${H}" stroke="#00F0FF" stroke-width="1"/>`).join("\n    ")}
+  </g>
+  <text x="80" y="440" font-family="monospace" font-size="34" fill="#00F0FF" letter-spacing="6">◆ DEEP DIVE</text>
+  <text x="80" y="560" font-family="sans-serif" font-size="30" fill="#8B93A7">${escapeXml(org)}</text>
+  <text x="80" y="740" font-family="sans-serif" font-size="88" font-weight="800" fill="#00F0FF">What You</text>
+  <text x="80" y="850" font-family="sans-serif" font-size="88" font-weight="800" fill="#fff">Need To Know</text>
+  <line x1="80" y1="1380" x2="300" y2="1380" stroke="#7000FF" stroke-width="6"/>
+  <text x="80" y="1460" font-family="sans-serif" font-size="40" font-weight="700" fill="#fff">${escapeXml(truncate(title, 44))}</text>
+  <text x="80" y="1780" font-family="monospace" font-size="26" fill="#8B93A7">Swipe for the breakdown →</text>
+  <text x="80" y="1860" font-family="monospace" font-size="24" fill="#00F0FF">kifayat-ai-matrix.vercel.app</text>
+</svg>`);
+
+  // --- Slides 2..N: TL;DR bullets ---
+  tldr.slice(0, 4).forEach((bullet, i) => {
+    const bodyTspans = textLines(80, 840, wrapText(bullet, 18), 62, "#E7ECF3");
+    slides.push(`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+  <rect width="${W}" height="${H}" fill="#0A0D14"/>
+  <rect x="0" y="0" width="${W}" height="120" fill="#131720"/>
+  <text x="80" y="78" font-family="monospace" font-size="30" fill="#00F0FF">${i + 2} / ${tldr.length + 2}</text>
+  <text x="${W - 80}" y="78" font-family="monospace" font-size="30" fill="#8B93A7" text-anchor="end">${escapeXml(org)}</text>
+  <text x="80" y="440" font-family="monospace" font-size="300" font-weight="800" fill="#1F2533">${i + 1}</text>
+  <line x1="80" y1="640" x2="260" y2="640" stroke="#7000FF" stroke-width="8"/>
+  <text x="80" y="720" font-family="sans-serif" font-size="36" font-weight="700" fill="#00F0FF">KEY TAKEAWAY</text>
+  <text x="80" y="840" font-family="sans-serif" font-size="62" font-weight="700" fill="#E7ECF3">${bodyTspans}</text>
+  <text x="80" y="1860" font-family="monospace" font-size="24" fill="#8B93A7">Swipe →</text>
+</svg>`);
+  });
+
+  // --- Final slide: CTA ---
+  slides.push(`<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a0a2e"/>
+      <stop offset="1" stop-color="#0A0D14"/>
+    </linearGradient>
+  </defs>
+  <rect width="${W}" height="${H}" fill="url(#bg3)"/>
+  <text x="80" y="700" font-family="sans-serif" font-size="84" font-weight="800" fill="#fff">Missed the last</text>
+  <text x="80" y="810" font-family="sans-serif" font-size="84" font-weight="800" fill="#00F0FF">3 releases?</text>
+  <text x="80" y="1020" font-family="sans-serif" font-size="38" fill="#8B93A7">Get daily AI intelligence,</text>
+  <text x="80" y="1075" font-family="sans-serif" font-size="38" fill="#8B93A7">decoded in plain English.</text>
+  <rect x="80" y="1200" width="560" height="110" rx="20" fill="#00F0FF"/>
+  <text x="110" y="1268" font-family="sans-serif" font-size="40" font-weight="800" fill="#0A0D14">Subscribe Free</text>
+  <text x="80" y="1480" font-family="monospace" font-size="30" fill="#00F0FF">kifayat-ai-matrix.vercel.app</text>
+  <text x="80" y="1540" font-family="monospace" font-size="26" fill="#8B93A7">20 stories · every 24 hours</text>
+  <text x="80" y="1840" font-family="monospace" font-size="24" fill="#8B93A7">◆ Kifayat AI Matrix</text>
+</svg>`);
+
+  slides.forEach((svg, i) => fs.writeFileSync(`${base}-slide-${i + 1}.svg`, svg));
+  return slides.map((_, i) => `/carousels/${slug}-slide-${i + 1}.svg`);
+}
+
 async function main() {
   const date = new Date();
   const today = date.toISOString().slice(0, 10);
@@ -191,6 +290,13 @@ async function main() {
     const pick = TOPICS[i % TOPICS.length];
     const post = await synthesize(pick[1], pick[0], date, i);
     const fm = post.frontmatter;
+    const carousel = renderCarousel(
+      PUBLIC_CAROUSELS,
+      post.slug,
+      fm.title,
+      pick[0],
+      fm.tldr
+    );
     const mdx = [
       "---",
       `title: ${JSON.stringify(fm.title)}`,
@@ -201,6 +307,7 @@ async function main() {
       `tags: ${JSON.stringify(fm.tags)}`,
       `category: ${JSON.stringify(fm.category)}`,
       `cover: ${JSON.stringify(fm.cover)}`,
+      `carousel: ${JSON.stringify(carousel)}`,
       `keyword: ${JSON.stringify(fm.keyword)}`,
       `tldr: ${JSON.stringify(fm.tldr)}`,
       `faq: ${JSON.stringify(fm.faq)}`,

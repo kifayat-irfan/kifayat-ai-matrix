@@ -9,6 +9,7 @@ import { unified } from "unified";
 import { readPost, getAllSlugs } from "@/lib/posts";
 import { JsonLd } from "@/components/JsonLd";
 import { AdSlot } from "@/components/AdSlot";
+import Carousel from "@/components/Carousel";
 import { postMetadata, postJsonLd } from "./metadata";
 import type { Metadata } from "next";
 
@@ -81,6 +82,15 @@ export default function PostPage({ params }: { params: { slug: string } }) {
         <span>·</span>
         <span>{post.readingTime || 7} min read</span>
       </div>
+
+      {post.carousel && post.carousel.length > 0 && (
+        <div className="mb-10 flex flex-col items-center">
+          <Carousel slides={post.carousel} alt={post.title} />
+          <p className="mt-3 text-center font-mono text-xs text-slate-500">
+            📱 Social carousel — swipe to preview this story
+          </p>
+        </div>
+      )}
 
       {post.tldr && post.tldr.length > 0 && (
         <aside className="mb-8 rounded-lg border border-matrix-cyan/30 bg-matrix-panel/60 p-5">

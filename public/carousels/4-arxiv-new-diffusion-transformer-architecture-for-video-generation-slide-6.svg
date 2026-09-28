@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a0a2e"/>
+      <stop offset="1" stop-color="#0A0D14"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#bg3)"/>
+  <text x="80" y="700" font-family="sans-serif" font-size="84" font-weight="800" fill="#fff">Missed the last</text>
+  <text x="80" y="810" font-family="sans-serif" font-size="84" font-weight="800" fill="#00F0FF">3 releases?</text>
+  <text x="80" y="1020" font-family="sans-serif" font-size="38" fill="#8B93A7">Get daily AI intelligence,</text>
+  <text x="80" y="1075" font-family="sans-serif" font-size="38" fill="#8B93A7">decoded in plain English.</text>
+  <rect x="80" y="1200" width="560" height="110" rx="20" fill="#00F0FF"/>
+  <text x="110" y="1268" font-family="sans-serif" font-size="40" font-weight="800" fill="#0A0D14">Subscribe Free</text>
+  <text x="80" y="1480" font-family="monospace" font-size="30" fill="#00F0FF">kifayat-ai-matrix.vercel.app</text>
+  <text x="80" y="1540" font-family="monospace" font-size="26" fill="#8B93A7">20 stories · every 24 hours</text>
+  <text x="80" y="1840" font-family="monospace" font-size="24" fill="#8B93A7">◆ Kifayat AI Matrix</text>
+</svg>

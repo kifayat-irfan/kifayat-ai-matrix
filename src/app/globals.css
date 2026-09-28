@@ -37,7 +37,7 @@ a { color: inherit; }
 }
 ::-webkit-scrollbar-thumb:hover { background: #2a3346; }
 
-/* Smooth focus ring for keyboard users. */
+/* Focus ring for keyboard users. */
 :focus-visible {
   outline: 2px solid #00F0FF;
   outline-offset: 2px;
@@ -52,3 +52,188 @@ a { color: inherit; }
     scroll-behavior: auto !important;
   }
 }
+
+/* =========================================================================
+   Article typography
+   Hand-written in place of the @tailwindcss/typography plugin, which loaded
+   silently and produced no CSS under Next 14's PostCSS pipeline. Writing it
+   directly is deterministic and keeps us on one less runtime dependency.
+   ========================================================================= */
+.prose {
+  color: #CBD2DD;
+  font-size: 1.0625rem;
+  line-height: 1.85;
+  word-break: break-word;
+  counter-reset: example;
+}
+.prose > :first-child { margin-top: 0; }
+.prose > :last-child { margin-bottom: 0; }
+
+.prose h2 {
+  margin-top: 2.2em;
+  margin-bottom: 0.6em;
+  font-family: var(--font-grotesk), 'Space Grotesk', sans-serif;
+  font-size: 1.65em;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #FFFFFF;
+  letter-spacing: -0.015em;
+}
+.prose h2::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 2px;
+  background: #00F0FF;
+  margin-bottom: 0.5em;
+}
+.prose h3 {
+  margin-top: 1.6em;
+  margin-bottom: 0.5em;
+  font-family: var(--font-grotesk), 'Space Grotesk', sans-serif;
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.prose h4 {
+  margin-top: 1.4em;
+  margin-bottom: 0.4em;
+  font-size: 1.05em;
+  font-weight: 600;
+  color: #E7ECF3;
+}
+.prose p {
+  margin-top: 1.15em;
+  margin-bottom: 1.15em;
+}
+.prose strong { color: #FFFFFF; font-weight: 700; }
+.prose em { font-style: italic; }
+.prose mark {
+  background: rgba(0,240,255,0.2);
+  color: #E7ECF3;
+  padding: 0 0.2em;
+  border-radius: 0.2em;
+}
+.prose a {
+  color: #00F0FF;
+  text-decoration: underline;
+  text-decoration-color: rgba(0,240,255,0.4);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s;
+}
+.prose a:hover {
+  text-decoration-color: #00F0FF;
+}
+.prose ul,
+.prose ol {
+  margin-top: 1.15em;
+  margin-bottom: 1.15em;
+  padding-left: 1.6em;
+}
+.prose ul { list-style: none; }
+.prose li {
+  margin-top: 0.55em;
+  margin-bottom: 0.55em;
+  padding-left: 0.3em;
+}
+.prose ul > li {
+  position: relative;
+  list-style: none;
+}
+.prose ul > li::before {
+  content: "";
+  position: absolute;
+  left: -1.05em;
+  top: 0.62em;
+  width: 6px;
+  height: 6px;
+  background: #00F0FF;
+  border-radius: 1px;
+  transform: rotate(45deg);
+}
+.prose ol { list-style: decimal; }
+.prose ol > li::marker {
+  color: #00F0FF;
+  font-family: var(--font-mono), monospace;
+  font-weight: 600;
+}
+.prose li > ul,
+.prose li > ol {
+  margin-top: 0.55em;
+  margin-bottom: 0.55em;
+}
+
+.prose blockquote {
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  padding: 0.4em 0 0.4em 1.3em;
+  border-left: 3px solid #7000FF;
+  background: rgba(112,0,255,0.07);
+  border-radius: 0 0.5rem 0.5rem 0;
+  color: #E7ECF3;
+  font-size: 1.1em;
+  font-style: italic;
+}
+.prose blockquote p { margin-top: 0.5em; margin-bottom: 0.5em; }
+.prose blockquote::before,
+.prose blockquote::after { content: none; }
+
+.prose code {
+  font-family: var(--font-mono), monospace;
+  font-size: 0.85em;
+  color: #00F0FF;
+  background: rgba(0,240,255,0.08);
+  padding: 0.15em 0.4em;
+  border-radius: 0.3em;
+  border: 1px solid rgba(0,240,255,0.15);
+}
+.prose pre {
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  padding: 1.1em 1.3em;
+  background: #0F1420;
+  border: 1px solid #1F2533;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  line-height: 1.6;
+}
+.prose pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #E7ECF3;
+  font-size: 0.9em;
+}
+
+.prose hr {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #00F0FF33, transparent);
+}
+.prose img {
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  border-radius: 0.75rem;
+}
+.prose table {
+  width: 100%;
+  margin-top: 1.6em;
+  margin-bottom: 1.6em;
+  border-collapse: collapse;
+  font-size: 0.95em;
+}
+.prose th,
+.prose td {
+  padding: 0.65em 0.9em;
+  text-align: left;
+  border-bottom: 1px solid #1F2533;
+}
+.prose th {
+  color: #FFFFFF;
+  font-weight: 600;
+  background: rgba(0,240,255,0.06);
+  border-bottom: 2px solid rgba(0,240,255,0.3);
+}
+.prose tr:nth-child(even) > td { background: rgba(255,255,255,0.015); }

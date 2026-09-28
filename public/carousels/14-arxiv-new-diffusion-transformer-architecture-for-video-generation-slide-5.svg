@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <rect width="1080" height="1920" fill="#0A0D14"/>
+  <rect x="0" y="0" width="1080" height="120" fill="#131720"/>
+  <text x="80" y="78" font-family="monospace" font-size="30" fill="#00F0FF">5 / 6</text>
+  <text x="1000" y="78" font-family="monospace" font-size="30" fill="#8B93A7" text-anchor="end">arXiv</text>
+  <text x="80" y="440" font-family="monospace" font-size="300" font-weight="800" fill="#1F2533">4</text>
+  <line x1="80" y1="640" x2="260" y2="640" stroke="#7000FF" stroke-width="8"/>
+  <text x="80" y="720" font-family="sans-serif" font-size="36" font-weight="700" fill="#00F0FF">KEY TAKEAWAY</text>
+  <text x="80" y="840" font-family="sans-serif" font-size="62" font-weight="700" fill="#E7ECF3"><tspan x="80" y="840">Watch for</tspan><tspan x="80" dy="76">follow-on releases</tspan><tspan x="80" dy="76">and third-party</tspan><tspan x="80" dy="76">integrations over</tspan><tspan x="80" dy="76">the coming weeks.</tspan></text>
+  <text x="80" y="1860" font-family="monospace" font-size="24" fill="#8B93A7">Swipe →</text>
+</svg>
